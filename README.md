@@ -1,2 +1,2 @@
 # Java2022-Kodlama.io
-Basics and introduction to Java
+From basic to advance Java programming
