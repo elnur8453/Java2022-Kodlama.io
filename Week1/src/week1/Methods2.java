@@ -1,0 +1,55 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package week1;
+
+/**
+ *
+ * @author ASUS
+ */
+public class Methods2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        String mesaj = "Bugün hava çok güzel";
+        String yeniMesaj = sehirVer();
+        System.out.println(yeniMesaj);
+        int sayi = topla(15, 7);
+        System.out.println(sayi);
+        int toplam = topla2(2, 3, 4);
+        System.out.println("Toplam: " + toplam);
+    }
+
+    public static void ekle() {
+        System.out.println("Eklendi");
+    }
+
+    public static void sil() {
+        System.out.println("Silindi");
+    }
+
+    public static void guncelle() {
+        System.out.println("Güncellendi");
+    }
+
+    public static int topla(int sayi1, int sayi2) {
+        return sayi1 + sayi2;
+    }
+
+    public static int topla2(int... sayilar) {
+        int toplam = 0;  
+        for (int sayi : sayilar) {
+            toplam += sayi;
+        }
+        return toplam;
+    }
+
+    public static String sehirVer() {
+        return "Ankara";
+    }
+}
